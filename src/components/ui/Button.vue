@@ -19,9 +19,9 @@ const buttonClasses = computed(() => {
   const baseClasses = 'justify-center items-center h-12 px-6 text-sm font-semibold rounded-lg'
 
   const variantClasses = {
-    primary: 'bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer',
-    secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80 cursor-pointer',
-    muted: 'bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer',
+    primary: 'bg-primary text-primary-foreground  cursor-pointer',
+    secondary: 'bg-secondary text-secondary-foreground  cursor-pointer',
+    muted: 'bg-muted text-muted-foreground  cursor-pointer',
     destructive:
       'bg-destructive text-destructive-foreground hover:bg-destructive/90 cursor-pointer',
     accent: 'bg-accent text-accent-foreground hover:bg-accent/90 cursor-pointer',

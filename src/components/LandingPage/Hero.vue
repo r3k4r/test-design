@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from '../ui/Button.vue'
+</script>
 
 <template>
   <section class="flex flex-col items-center justify-center gap-6 mt-[118px] padding">
@@ -21,15 +23,22 @@
     </div>
 
     <div class="flex flex-col items-center text-center gap-8">
-      <h1 class="max-w-[882px] text-[48px] leading-[130%] font-bold">
+      <h1
+        class="max-w-[1102px] font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-7xl leading-[130%]"
+      >
         Your Gateway to Global Deals of Hotels and Holiday Services
       </h1>
-      <p>
+      <p
+        class="font-semibold text-base text-primary-foreground/85 max-w-[552px] mx-auto leading-[140%]"
+      >
         Babylon Holiday is a powerful accommodation and holiday booking engine that empower travel
         companies and OTAs from all over the world with the best content, support, and technology.
       </p>
 
-      <div></div>
+      <div class="flex flex-wrap sm:flex-nowrap w-full items-center justify-center gap-4">
+        <Button class="w-full sm:w-[150px]" variant="secondary"> Contact Us </Button>
+        <Button class="w-full sm:w-[150px]"> Join Us </Button>
+      </div>
     </div>
   </section>
 </template>
