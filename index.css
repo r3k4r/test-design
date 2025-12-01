@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+}
+
+:root {
+  --primary: #f9be07;
+  --primary-foreground: #000000;
+  --secondary: #e8e8e8;
+  --secondary-foreground: #000000;
+  --muted: #1e1e1e;
+  --muted-foreground: #ffffff;
+}
+
+.containerr {
+  width: 100%;
+  @media (width >= 104rem) {
+    max-width: 104rem;
+  }
+}
+
+.padding {
+  @apply px-[26px] md:px-10;
+}
