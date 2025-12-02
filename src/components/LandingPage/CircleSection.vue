@@ -27,8 +27,18 @@ import Button from '../ui/Button.vue'
     />
 
     <div class="relative flex flex-col items-center justify-center">
-      <h1>text</h1>
-      <Button class="rounded-full! px-8">Learn more</Button>
+      <div
+        class="flex items-center justify-between gap-5 flex-wrap sm:flex-nowrap w-full mb-12"
+      ></div>
+      <div class="flex flex-col items-center justify-center gap-12">
+        <h1 class="text-[54px] font-semibold max-w-[600px] text-center leading-[112%]">
+          Elevate your business to new levels
+        </h1>
+        <Button class="rounded-full! px-8">Learn more</Button>
+      </div>
+      <div
+        class="flex items-center justify-between gap-5 flex-wrap sm:flex-nowrap w-full mb-12"
+      ></div>
     </div>
   </section>
 </template>
