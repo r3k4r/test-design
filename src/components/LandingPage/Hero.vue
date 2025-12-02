@@ -23,9 +23,7 @@ import Button from '../ui/Button.vue'
     </div>
 
     <div class="flex flex-col items-center text-center gap-8">
-      <h1
-        class="max-w-[1102px] font-semibold text-3xl sm:text-4xl lg:text-5xl xl:text-7xl leading-[130%]"
-      >
+      <h1 class="max-w-[1102px] font-semibold text-3xl lg:text-5xl xl:text-7xl leading-[130%]">
         Your Gateway to Global Deals of Hotels and Holiday Services
       </h1>
       <p
