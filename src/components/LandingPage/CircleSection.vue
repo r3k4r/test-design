@@ -29,33 +29,33 @@ import Button from '../ui/Button.vue'
     <div class="relative flex flex-col items-center justify-center">
       <div class="flex items-center justify-between gap-5 flex-wrap sm:flex-nowrap w-full mb-12">
         <div
-          class="animate w-fit min-h-14 px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-2 -translate-x-14 -translate-y-8"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 -translate-x-2 sm:-translate-x-4 md:-translate-x-14 -translate-y-4 sm:-translate-y-6 md:-translate-y-8"
           style="animation-delay: 0ms"
         >
-          <div class="w-9 h-9 bg-primary aspect-square rounded-full" />
+          <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
           <div class="flex flex-col items-start justify-start">
-            <h1 class="text-sm font-medium leading-[112%]">+20</h1>
-            <p class="text-sm font-medium leading-[112%]">Bed bank suppliers</p>
+            <h1 class="text-xs sm:text-sm font-medium leading-[112%]">+20</h1>
+            <p class="text-[10px] sm:text-sm font-medium leading-[112%]">Bed bank suppliers</p>
           </div>
         </div>
         <div
-          class="animate w-fit min-h-14 px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-2"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2"
           style="animation-delay: 500ms"
         >
-          <div class="w-9 h-9 bg-primary aspect-square rounded-full" />
+          <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
           <div class="flex flex-col items-start justify-start">
-            <h1 class="text-sm font-medium leading-[112%]">+190</h1>
-            <p class="text-sm font-medium leading-[112%]">Countries</p>
+            <h1 class="text-xs sm:text-sm font-medium leading-[112%]">+190</h1>
+            <p class="text-[10px] sm:text-sm font-medium leading-[112%]">Countries</p>
           </div>
         </div>
         <div
-          class="animate w-fit min-h-14 px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-2 translate-x-14 -translate-y-20"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 translate-x-2 sm:translate-x-2 md:translate-x-14 -translate-y-8 sm:-translate-y-14 md:-translate-y-20"
           style="animation-delay: 1000ms"
         >
-          <div class="w-9 h-9 bg-primary aspect-square rounded-full" />
+          <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
           <div class="flex flex-col items-start justify-start">
-            <h1 class="text-sm font-medium leading-[112%]">+2.5M</h1>
-            <p class="text-sm font-medium leading-[112%]">Hotel partners</p>
+            <h1 class="text-xs sm:text-sm font-medium leading-[112%]">+2.5M</h1>
+            <p class="text-[10px] sm:text-sm font-medium leading-[112%]">Hotel partners</p>
           </div>
         </div>
       </div>
@@ -69,33 +69,33 @@ import Button from '../ui/Button.vue'
       </div>
       <div class="flex items-center justify-between gap-5 flex-wrap sm:flex-nowrap w-full mt-12">
         <div
-          class="animate w-fit min-h-14 px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-2 -translate-x-10 -translate-y-10"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 -translate-x-2 sm:-translate-x-6 md:-translate-x-10 -translate-y-4 sm:-translate-y-6 md:-translate-y-10"
           style="animation-delay: 300ms"
         >
-          <div class="w-9 h-9 bg-primary aspect-square rounded-full" />
+          <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
           <div class="flex flex-col items-start justify-start">
-            <h1 class="text-sm font-medium leading-[112%]">24/7/365</h1>
-            <p class="text-sm font-medium leading-[112%]">Support</p>
+            <h1 class="text-xs sm:text-sm font-medium leading-[112%]">24/7/365</h1>
+            <p class="text-[10px] sm:text-sm font-medium leading-[112%]">Support</p>
           </div>
         </div>
         <div
-          class="animate w-fit min-h-14 px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-2 translate-x-4 translate-y-[82px]"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 translate-x-1 sm:translate-x-2 md:translate-x-4 translate-y-10 sm:translate-y-[60px] md:translate-y-[82px]"
           style="animation-delay: 700ms"
         >
-          <div class="w-9 h-9 bg-primary aspect-square rounded-full" />
+          <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
           <div class="flex flex-col items-start justify-start">
-            <h1 class="text-sm font-medium leading-[112%]">+100</h1>
-            <p class="text-sm font-medium leading-[112%]">Helpdesk staff</p>
+            <h1 class="text-xs sm:text-sm font-medium leading-[112%]">+100</h1>
+            <p class="text-[10px] sm:text-sm font-medium leading-[112%]">Helpdesk staff</p>
           </div>
         </div>
         <div
-          class="animate w-fit min-h-14 px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-2 translate-x-[82px] -translate-y-10"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 sm:translate-x-[10px] md:translate-x-[82px] -translate-y-4 sm:-translate-y-6 md:-translate-y-10"
           style="animation-delay: 1200ms"
         >
-          <div class="w-9 h-9 bg-primary aspect-square rounded-full" />
+          <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
           <div class="flex flex-col items-start justify-start">
-            <h1 class="text-sm font-medium leading-[112%]">+1000</h1>
-            <p class="text-sm font-medium leading-[112%]">Direct hotel contacts</p>
+            <h1 class="text-xs sm:text-sm font-medium leading-[112%]">+1000</h1>
+            <p class="text-[10px] sm:text-sm font-medium leading-[112%]">Direct hotel contacts</p>
           </div>
         </div>
       </div>
