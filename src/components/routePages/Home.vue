@@ -7,6 +7,7 @@ import WhyChooseUs from '../LandingPage/WhyChooseUs.vue'
 import CircleSection from '../LandingPage/CircleSection.vue'
 import BlackCard from '../LandingPage/BlackCard.vue'
 import Opportunity from '../LandingPage/Opportunity.vue'
+import Gateway from '../LandingPage/Gateway.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Opportunity from '../LandingPage/Opportunity.vue'
   <CircleSection />
   <BlackCard />
   <Opportunity />
+  <Gateway />
   <br />
   <br />
   <br />
