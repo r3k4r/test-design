@@ -34,7 +34,7 @@ const cardItems = [
 <template>
   <section class="mt-[130px] lg:mt-[368px] containerr w-full xl:px-10">
     <div
-      class="w-full lg:pb-0 pb-6 pt-[110px] max-w-[1653px] h-fit xl:max-h-[738px] xl:rounded-3xl px-4 bg-primary relative overflow-hidden"
+      class="w-full lg:pb-0 pb-6 pt-[110px] max-w-[1653px] h-fit xl:max-h-[738px] xl:rounded-2xl px-4 bg-primary relative overflow-hidden"
     >
       <div class="flex flex-col items-center justify-center">
         <!-- TITLE AND SUBTITLE -->
