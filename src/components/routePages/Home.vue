@@ -6,6 +6,7 @@ import HolidaySection from '../LandingPage/HolidaySection.vue'
 import WhyChooseUs from '../LandingPage/WhyChooseUs.vue'
 import CircleSection from '../LandingPage/CircleSection.vue'
 import BlackCard from '../LandingPage/BlackCard.vue'
+import Opportunity from '../LandingPage/Opportunity.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import BlackCard from '../LandingPage/BlackCard.vue'
   <WhyChooseUs />
   <CircleSection />
   <BlackCard />
+  <Opportunity />
   <br />
   <br />
   <br />
