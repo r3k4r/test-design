@@ -78,6 +78,7 @@ const itemContent = [
         <h1 class="text-[36px] lg:text-[64px] font-semibold">
           Everything You Need to Manage, Seamlessly Covered In Babylon Holiday
         </h1>
+        <!-- HEADER (NAVBAR) -->
         <div
           class="flex flex-col sm:flex-row flex-wrap items-start justify-start w-full sm:w-fit max-w-[1471px] gap-6 bg-[#303030] rounded-lg md:rounded-[28px] p-2 relative"
         >
@@ -88,7 +89,7 @@ const itemContent = [
           >
             <component
               :is="item.icon"
-              class="group-active:bg-primary text-white rounded-full p-2 w-[34px] h-[34px]"
+              class="group-active:bg-primary text-white group-active:rounded-full p-2 w-[34px] h-[34px]"
             />
             <h4 class="font-semibold text-white group-active:text-black">
               {{ item.title }}
@@ -97,26 +98,22 @@ const itemContent = [
         </div>
       </div>
 
-      <div class="w-full max-w-[615px] z-20">
+      <!-- CONTENT -->
+      <div class="w-full z-20">
         <div class="flex flex-col gap-6">
           <!-- ICON -->
           <div
             class="w-[63px] h-[63px] flex items-center justify-center rounded-lg md:rounded-full aspect-square border border-gray-400/50"
           >
-            <Link />
+            <component :is="itemContent[0]?.icon" class="w-8 h-8 text-white" />
           </div>
           <!-- TITLE -->
-          <div>
-            <h1 class="text-[64px] leading-[112%] font-semibold">Reservation Insights</h1>
-          </div>
+          <h1 class="text-[64px] leading-[112%] font-semibold">{{ itemContent[0]?.title }}</h1>
+
           <!-- DESCRIPTION -->
-          <div>
-            <p class="text-sm font-semibold text-white/60">
-              Effortlessly search, compare, and book hotels, tours, and holiday packages across
-              thousands of destinations. Modify or cancel reservations, track booking status in real
-              time, and manage client requests—all from a single, intuitive dashboard.
-            </p>
-          </div>
+          <p class="text-sm font-semibold text-white/60 max-w-[657px]">
+            {{ itemContent[0]?.description }}
+          </p>
         </div>
       </div>
 
