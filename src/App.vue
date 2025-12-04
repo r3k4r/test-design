@@ -34,7 +34,7 @@ onMounted(() => {
         :transition="{ duration: 0.4, ease: 'easeOut' }"
       >
         <h1
-          class="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-semibold text-white text-center max-w-[90vw] md:max-w-[800px] leading-[120%] px-6"
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white text-center max-w-[90vw] md:max-w-[800px] leading-[120%] px-6"
         >
           Your Business Gateway to Global Travel Solutions
         </h1>
