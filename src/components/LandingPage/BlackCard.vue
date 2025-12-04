@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { Motion } from 'motion-v'
 import right from '@/assets/frame.svg'
 import { BadgeDollarSign, Calendar, Calendar1, Languages, Link, Settings } from 'lucide-vue-next'
@@ -71,10 +71,60 @@ const itemContent = [
 ]
 
 const activeIndex = ref(0)
+const navItemRefs = ref<(HTMLElement | null)[]>([])
+const slidingBgStyle = ref({
+  left: '0px',
+  top: '0px',
+  width: '0px',
+  height: '0px',
+})
 
 const setActiveItem = (index: number) => {
   activeIndex.value = index
+  updateSlidingBackground(index)
 }
+
+const updateSlidingBackground = (index: number) => {
+  const targetElement = navItemRefs.value[index]
+  if (targetElement) {
+    const parent = targetElement.parentElement
+    if (parent) {
+      const parentRect = parent.getBoundingClientRect()
+      const targetRect = targetElement.getBoundingClientRect()
+      slidingBgStyle.value = {
+        left: `${targetRect.left - parentRect.left}px`,
+        top: `${targetRect.top - parentRect.top}px`,
+        width: `${targetRect.width}px`,
+        height: `${targetRect.height}px`,
+      }
+    }
+  }
+}
+
+const setNavRef = (el: any, index: number) => {
+  if (el) {
+    navItemRefs.value[index] = el
+    if (index === 0 && slidingBgStyle.value.width === '0px') {
+      // Initialize position on first mount
+      setTimeout(() => updateSlidingBackground(0), 100)
+    }
+  }
+}
+
+// Handle window resize to recalculate position
+const handleResize = () => {
+  updateSlidingBackground(activeIndex.value)
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+  // Initial calculation after mount
+  setTimeout(() => updateSlidingBackground(0), 150)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <template>
@@ -90,18 +140,40 @@ const setActiveItem = (index: number) => {
         <div
           class="flex flex-col sm:flex-row flex-wrap items-start justify-start w-full sm:w-fit max-w-[1471px] gap-6 bg-[#303030] rounded-lg md:rounded-[28px] p-2 relative"
         >
+          <!-- Sliding white background - works on all screen sizes -->
+          <div
+            class="absolute bg-white rounded-full transition-all duration-300 ease-in-out pointer-events-none"
+            :style="{
+              left: slidingBgStyle.left,
+              top: slidingBgStyle.top,
+              width: slidingBgStyle.width,
+              height: slidingBgStyle.height,
+            }"
+          />
+
           <div
             v-for="(item, index) in navItems"
             :key="item.title"
+            :ref="(el) => setNavRef(el, index)"
             @click="setActiveItem(index)"
-            :class="`group cursor-pointer flex items-center justify-center gap-2 p-1.5 rounded-full transition-colors ${activeIndex === index ? 'bg-white' : 'hover:bg-white/10'}`"
+            class="group cursor-pointer flex items-center justify-center gap-2 p-1.5 rounded-full relative z-10 hover:opacity-80 transition-opacity"
           >
-            <component
-              :is="item.icon"
-              :class="`p-2 w-[34px] h-[34px] transition-colors ${activeIndex === index ? 'bg-primary text-white rounded-full' : 'text-white rounded-full'}`"
-            />
+            <div class="relative w-[34px] h-[34px]">
+              <Motion
+                v-if="activeIndex === index"
+                :key="`icon-bg-${index}`"
+                :initial="{ scale: 0, opacity: 0 }"
+                :animate="{ scale: 1, opacity: 1 }"
+                :transition="{ duration: 0.3, ease: 'backOut', delay: 0.28 }"
+                class="absolute inset-0 bg-primary rounded-full"
+              />
+              <component
+                :is="item.icon"
+                :class="`relative z-10 p-2 w-[34px] h-[34px] transition-colors ${activeIndex === index ? 'text-white' : 'text-white'}`"
+              />
+            </div>
             <h4
-              :class="`font-semibold transition-colors ${activeIndex === index ? 'text-black' : 'text-white'}`"
+              :class="`font-semibold transition-colors duration-300 ${activeIndex === index ? 'text-black' : 'text-white'}`"
             >
               {{ item.title }}
             </h4>
