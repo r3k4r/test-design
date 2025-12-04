@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import right from '@/assets/frame.svg'
 import { BadgeDollarSign, Calendar, Calendar1, Languages, Link, Settings } from 'lucide-vue-next'
 
@@ -67,6 +68,12 @@ const itemContent = [
       'Control your profits by setting custom markups, commissions, and discounts per supplier, destination, or partner. Tailor your pricing strategy based on your business goals. Ensure that your pricing model is flexible and optimized for maximum revenue generation and profitability.',
   },
 ]
+
+const activeIndex = ref(0)
+
+const setActiveItem = (index: number) => {
+  activeIndex.value = index
+}
 </script>
 
 <template>
@@ -83,15 +90,18 @@ const itemContent = [
           class="flex flex-col sm:flex-row flex-wrap items-start justify-start w-full sm:w-fit max-w-[1471px] gap-6 bg-[#303030] rounded-lg md:rounded-[28px] p-2 relative"
         >
           <div
-            v-for="item in navItems"
+            v-for="(item, index) in navItems"
             :key="item.title"
-            class="group cursor-pointer flex items-center justify-center gap-2 active:bg-white p-1.5 text-black rounded-full"
+            @click="setActiveItem(index)"
+            :class="`group cursor-pointer flex items-center justify-center gap-2 p-1.5 rounded-full transition-colors ${activeIndex === index ? 'bg-white' : 'hover:bg-white/10'}`"
           >
             <component
               :is="item.icon"
-              class="group-active:bg-primary text-white group-active:rounded-full p-2 w-[34px] h-[34px]"
+              :class="`p-2 w-[34px] h-[34px] transition-colors ${activeIndex === index ? 'bg-primary text-white rounded-full' : 'text-white'}`"
             />
-            <h4 class="font-semibold text-white group-active:text-black">
+            <h4
+              :class="`font-semibold transition-colors ${activeIndex === index ? 'text-black' : 'text-white'}`"
+            >
               {{ item.title }}
             </h4>
           </div>
@@ -105,14 +115,16 @@ const itemContent = [
           <div
             class="w-[63px] h-[63px] flex items-center justify-center rounded-lg md:rounded-full aspect-square border border-gray-400/50"
           >
-            <component :is="itemContent[0]?.icon" class="w-8 h-8 text-white" />
+            <component :is="itemContent[activeIndex]?.icon" class="w-8 h-8 text-white" />
           </div>
           <!-- TITLE -->
-          <h1 class="text-[64px] leading-[112%] font-semibold">{{ itemContent[0]?.title }}</h1>
+          <h1 class="text-[64px] leading-[112%] font-semibold">
+            {{ itemContent[activeIndex]?.title }}
+          </h1>
 
           <!-- DESCRIPTION -->
           <p class="text-sm font-semibold text-white/60 max-w-[657px]">
-            {{ itemContent[0]?.description }}
+            {{ itemContent[activeIndex]?.description }}
           </p>
         </div>
       </div>
