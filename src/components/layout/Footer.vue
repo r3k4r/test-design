@@ -18,9 +18,9 @@ const year = new Date().getFullYear()
           class="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
         >
           <!-- Logo -->
-          <div class="shrink-0 w-[153px] h-[53px]">
+          <router-link to="/" class="shrink-0 w-[153px] h-[53px]">
             <img :src="logo" alt="Babylon Holiday Logo" class="h-12 sm:h-14 md:h-16 w-auto" />
-          </div>
+          </router-link>
 
           <!-- Social Icons -->
           <div class="flex items-center gap-2">
@@ -49,16 +49,16 @@ const year = new Date().getFullYear()
         <div class="w-full flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-0">
           <!-- Left Section - Contact Info -->
           <div class="w-full lg:w-1/2 flex flex-col gap-4">
-            <div class="flex items-center gap-3">
+            <a href="mailto:info@babylonholiday.com" class="flex items-center gap-3 w-fit">
               <Mail :size="20" class="text-black shrink-0" />
               <span class="text-sm font-semibold underline text-black"
                 >info@babylonholiday.com</span
               >
-            </div>
-            <div class="flex items-center gap-3">
+            </a>
+            <a href="tel:++9647735566009" class="flex items-center gap-3 w-fit">
               <Phone :size="20" class="text-black shrink-0" />
-              <span class="text-sm font-semibold underline text-black">+964 770 123 4567</span>
-            </div>
+              <span class="text-sm font-semibold underline text-black">+964 773 556 6009</span>
+            </a>
           </div>
 
           <!-- Right Section - Menu, Visit Us, Newsletter -->
@@ -143,10 +143,12 @@ const year = new Date().getFullYear()
         <div
           class="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
         >
-          <p class="text-sm sm:text-base text-gray-700">Copyright {{ year }} All rights reserved</p>
+          <p class="text-sm font-semibold text-[#757575]">
+            Copyright {{ year }} All rights reserved
+          </p>
           <div class="flex items-center gap-6">
-            <a href="#" class="text-sm sm:text-base text-gray-700">Privacy Policy</a>
-            <a href="#" class="text-sm sm:text-base text-gray-700">Terms Of Use</a>
+            <a href="#" class="text-sm font-semibold text-[#757575]">Privacy & Policy</a>
+            <a href="#" class="text-sm font-semibold text-[#757575]">Terms Of Use</a>
           </div>
         </div>
       </div>
