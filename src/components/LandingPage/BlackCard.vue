@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { Motion } from 'motion-v'
 import right from '@/assets/frame.svg'
 import { BadgeDollarSign, Calendar, Calendar1, Languages, Link, Settings } from 'lucide-vue-next'
 
@@ -97,7 +98,7 @@ const setActiveItem = (index: number) => {
           >
             <component
               :is="item.icon"
-              :class="`p-2 w-[34px] h-[34px] transition-colors ${activeIndex === index ? 'bg-primary text-white rounded-full' : 'text-white'}`"
+              :class="`p-2 w-[34px] h-[34px] transition-colors ${activeIndex === index ? 'bg-primary text-white rounded-full' : 'text-white rounded-full'}`"
             />
             <h4
               :class="`font-semibold transition-colors ${activeIndex === index ? 'text-black' : 'text-white'}`"
@@ -115,17 +116,40 @@ const setActiveItem = (index: number) => {
           <div
             class="w-[63px] h-[63px] flex items-center justify-center rounded-lg md:rounded-full aspect-square border border-gray-400/50"
           >
-            <component :is="itemContent[activeIndex]?.icon" class="w-8 h-8 text-white" />
+            <Motion
+              :key="activeIndex"
+              :initial="{ scale: 0.5, opacity: 0 }"
+              :animate="{ scale: 1, opacity: 1 }"
+              :transition="{ duration: 0.3, ease: 'easeOut' }"
+            >
+              <component :is="itemContent[activeIndex]?.icon" class="w-8 h-8 text-white" />
+            </Motion>
           </div>
           <!-- TITLE -->
-          <h1 class="text-[64px] leading-[112%] font-semibold">
-            {{ itemContent[activeIndex]?.title }}
-          </h1>
+          <Motion
+            :key="`title-${activeIndex}`"
+            :initial="{ x: 600, opacity: 0 }"
+            :animate="{ x: 0, opacity: 1 }"
+            :exit="{ x: -600, opacity: 0 }"
+            :transition="{ duration: 0.4, ease: 'easeInOut' }"
+          >
+            <h1 class="text-[64px] leading-[112%] font-semibold">
+              {{ itemContent[activeIndex]?.title }}
+            </h1>
+          </Motion>
 
           <!-- DESCRIPTION -->
-          <p class="text-sm font-semibold text-white/60 max-w-[657px]">
-            {{ itemContent[activeIndex]?.description }}
-          </p>
+          <Motion
+            :key="`desc-${activeIndex}`"
+            :initial="{ x: 600, opacity: 0 }"
+            :animate="{ x: 0, opacity: 1 }"
+            :exit="{ x: -100, opacity: 0 }"
+            :transition="{ duration: 0.4, ease: 'easeInOut', delay: 0.1 }"
+          >
+            <p class="text-sm font-semibold text-white/60 max-w-[657px]">
+              {{ itemContent[activeIndex]?.description }}
+            </p>
+          </Motion>
         </div>
       </div>
 
