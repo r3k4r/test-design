@@ -8,6 +8,7 @@ import CircleSection from '../LandingPage/CircleSection.vue'
 import BlackCard from '../LandingPage/BlackCard.vue'
 import Opportunity from '../LandingPage/Opportunity.vue'
 import Gateway from '../LandingPage/Gateway.vue'
+import Footer from '../layout/Footer.vue'
 </script>
 
 <template>
@@ -20,6 +21,24 @@ import Gateway from '../LandingPage/Gateway.vue'
   <BlackCard />
   <Opportunity />
   <Gateway />
+  <Footer />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   <br />
   <br />
   <br />

@@ -4,7 +4,7 @@ import Button from '../ui/Button.vue'
 
 <template>
   <section
-    class="mt-[125px] md:mt-[343px] max-w-[1102px] w-full padding relative h-full min-h-[946px] flex items-center justify-center"
+    class="mt-[125px] md:mt-[343px] max-w-[1102px] w-full padding relative h-full min-h-[946px] flex items-center justify-center overflow-hidden"
   >
     <div
       class="w-[250px] border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
@@ -89,7 +89,7 @@ import Button from '../ui/Button.vue'
           </div>
         </div>
         <div
-          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 sm:translate-x-[10px] md:translate-x-[82px] -translate-y-4 sm:-translate-y-6 md:-translate-y-10"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 sm:translate-x-2.5 md:translate-x-[82px] -translate-y-4 sm:-translate-y-6 md:-translate-y-10"
           style="animation-delay: 1200ms"
         >
           <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
