@@ -20,29 +20,4 @@ import Footer from '../layout/Footer.vue'
   <CircleSection />
   <BlackCard />
   <Opportunity />
-  <Gateway />
-  <Footer />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
 </template>
