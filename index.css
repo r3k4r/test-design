@@ -19,10 +19,7 @@
 }
 
 .containerr {
-  width: 100%;
-  @media (width >= 104rem) {
-    max-width: 104rem;
-  }
+  @apply w-full max-w-416;
 }
 
 .padding {
