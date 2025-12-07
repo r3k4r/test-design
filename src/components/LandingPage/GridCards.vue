@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { BellRing, BriefcaseBusiness, Radio, Shield } from 'lucide-vue-next'
+import background from '@/assets/big-background.svg'
 
 const cardItems = [
   {
@@ -22,7 +23,7 @@ const cardItems = [
 </script>
 
 <template>
-  <section class="mt-[121px] max-w-[1102px] w-full padding">
+  <section class="mt-[121px] max-w-[1102px] w-full padding relative">
     <div class="grid grid-cols-2 gap-6 md:gap-8">
       <div
         v-for="(item, index) in cardItems"
@@ -37,5 +38,11 @@ const cardItems = [
         <h3 class="text-base font-semibold leading-[150%]">{{ item.title }}</h3>
       </div>
     </div>
+
+    <img
+      :src="background"
+      alt="background"
+      class="absolute hidden lg:block -translate-x-[1000px] -translate-y-[900px] min-w-[3000px] max-h-[1513px]"
+    />
   </section>
 </template>

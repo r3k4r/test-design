@@ -47,7 +47,7 @@ onMounted(() => {
     :initial="{ opacity: 0 }"
     :animate="{ opacity: 1 }"
     :transition="{ duration: 0.6, ease: 'easeOut' }"
-    class="flex flex-col items-center justify-center"
+    class="flex flex-col items-center justify-center overflow-hidden"
   >
     <Navbar />
     <router-view />
