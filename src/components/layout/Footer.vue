@@ -8,7 +8,7 @@ const year = new Date().getFullYear()
 
 <template>
   <section
-    class="w-full bg-[#F2F2F2] pt-[250px] z-10 flex items-center justify-center px-4 sm:px-6 lg:px-8"
+    class="w-full bg-[#F2F2F2] pt-[300px] sm:pt-[250px] z-10 flex items-center justify-center px-4 sm:px-6 lg:px-8"
   >
     <div class="w-full max-w-[1376px]">
       <!-- Header & Body Container -->

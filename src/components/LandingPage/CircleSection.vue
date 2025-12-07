@@ -29,7 +29,7 @@ import Button from '../ui/Button.vue'
     <div class="relative flex flex-col items-center justify-center">
       <div class="flex items-center justify-between gap-5 flex-wrap sm:flex-nowrap w-full mb-12">
         <div
-          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 -translate-x-2 sm:-translate-x-4 md:-translate-x-14 -translate-y-4 sm:-translate-y-6 md:-translate-y-8"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 -translate-x-2 sm:-translate-x-4 md:-translate-x-14 -translate-y-10 xs:-translate-y-4 sm:-translate-y-6 md:-translate-y-8"
           style="animation-delay: 0ms"
         >
           <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
@@ -49,7 +49,7 @@ import Button from '../ui/Button.vue'
           </div>
         </div>
         <div
-          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 translate-x-2 sm:translate-x-2 md:translate-x-14 -translate-y-8 sm:-translate-y-14 md:-translate-y-20"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 translate-x-[100px] xs:translate-x-2 sm:translate-x-2 md:translate-x-14 -translate-y-8 sm:-translate-y-14 md:-translate-y-20"
           style="animation-delay: 1000ms"
         >
           <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
@@ -79,7 +79,7 @@ import Button from '../ui/Button.vue'
           </div>
         </div>
         <div
-          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 translate-x-1 sm:translate-x-2 md:translate-x-4 translate-y-10 sm:translate-y-[60px] md:translate-y-[82px]"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 translate-x-1 sm:translate-x-2 md:translate-x-4 -translate-y-4 xs:translate-y-10 sm:translate-y-[60px] md:translate-y-[82px]"
           style="animation-delay: 700ms"
         >
           <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />
@@ -89,7 +89,7 @@ import Button from '../ui/Button.vue'
           </div>
         </div>
         <div
-          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 sm:translate-x-2.5 md:translate-x-[82px] -translate-y-4 sm:-translate-y-6 md:-translate-y-10"
+          class="animate w-fit min-h-10 sm:min-h-14 px-2 sm:px-3 bg-white border border-[#DDDDDD] rounded-full flex items-center justify-start flex-nowrap gap-1 sm:gap-2 translate-x-[100px] xs:translate-x-0 sm:translate-x-2.5 md:translate-x-[82px] -translate-y-4 sm:-translate-y-6 md:-translate-y-10"
           style="animation-delay: 1200ms"
         >
           <div class="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 bg-primary aspect-square rounded-full" />

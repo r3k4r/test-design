@@ -27,7 +27,7 @@ const cardItems = [
       <div
         v-for="(item, index) in cardItems"
         :key="index"
-        class="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 bg-transparent border border-black/10 rounded-lg items-start"
+        class="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 bg-transparent border border-black/10 rounded-lg md:items-center"
       >
         <div
           class="h-12 w-12 aspect-square bg-black text-white rounded-md grid place-content-center"
