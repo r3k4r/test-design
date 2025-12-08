@@ -11,7 +11,7 @@ const cardItems = [
 
 <template>
   <section
-    class="mt-[124px] lg:mt-[286px] max-w-[1102px] w-full padding flex flex-col items-center justify-between gap-16 lg:gap-[101px] relative"
+    class="mt-[124px] lg:mt-[286px] max-w-[1102px] w-full padding-layout flex flex-col items-center justify-between gap-16 lg:gap-[101px] relative"
   >
     <!-- TEXT -->
     <div class="max-w-[680px] flex flex-col items-center justify-center gap-6">

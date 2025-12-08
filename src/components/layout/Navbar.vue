@@ -23,7 +23,7 @@ const menuHandler = () => {
 </script>
 
 <template>
-  <div class="flex justify-between items-center containerr padding mt-[46px] h-16">
+  <div class="flex justify-between items-center container-layout padding-layout mt-[46px] h-16">
     <div class="z-60">
       <router-link to="/" class="cursor-pointer">
         <img :src="logo" alt="logo" class="lg:h-16 h-12" />
@@ -49,7 +49,7 @@ const menuHandler = () => {
 
     <div
       v-show="isMenuOpen"
-      class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center padding"
+      class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center padding-layout"
     >
       <nav class="w-full text-center flex items-center flex-col justify-center pb-24 gap-y-12">
         <router-link

@@ -128,7 +128,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="mt-[125px] lg:mt-[237px] containerr w-full xl:px-10">
+  <section class="mt-[125px] lg:mt-[237px] container-layout w-full xl:px-10">
     <div
       class="flex flex-col items-start justify-start gap-14 lg:gap-12 w-full max-w-[1664px] h-fit xl:max-h-[932px] xl:rounded-2xl p-6 lg:p-16 bg-[#1E1E1E] text-white relative overflow-hidden"
     >

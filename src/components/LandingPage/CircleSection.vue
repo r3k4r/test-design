@@ -4,7 +4,7 @@ import Button from '../ui/Button.vue'
 
 <template>
   <section
-    class="mt-[125px] md:mt-[343px] max-w-[1102px] w-full padding relative h-full min-h-[946px] flex items-center justify-center overflow-hidden"
+    class="mt-[125px] md:mt-[343px] max-w-[1102px] w-full padding-layout relative h-full min-h-[946px] flex items-center justify-center overflow-hidden"
   >
     <div
       class="w-[250px] border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"

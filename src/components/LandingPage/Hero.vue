@@ -3,7 +3,7 @@ import Button from '../ui/Button.vue'
 </script>
 
 <template>
-  <section class="flex flex-col items-center justify-center gap-6 mt-[118px] padding">
+  <section class="flex flex-col items-center justify-center gap-6 mt-[118px] padding-layout">
     <div class="flex items-center gap-1 border border-black/15 rounded-full p-1 px-2">
       <p class="text-muted/80 font-semibold">Gain access to 2.5M Hotel Partners</p>
     </div>

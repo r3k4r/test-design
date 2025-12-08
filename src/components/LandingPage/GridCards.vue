@@ -23,7 +23,7 @@ const cardItems = [
 </script>
 
 <template>
-  <section class="mt-[121px] max-w-[1102px] w-full padding relative">
+  <section class="mt-[121px] max-w-[1102px] w-full padding-layout relative">
     <div class="grid grid-cols-2 gap-6 md:gap-8">
       <div
         v-for="(item, index) in cardItems"

@@ -13,7 +13,6 @@
 
 @theme inline {
   --breakpoint-xs: 475px;
-
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
@@ -31,10 +30,10 @@
   --muted-foreground: #ffffff;
 }
 
-.containerr {
+.container-layout {
   @apply w-full max-w-416 mx-auto;
 }
 
-.padding {
+.padding-layout {
   @apply px-[26px] md:px-10;
 }

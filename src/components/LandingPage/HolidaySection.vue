@@ -32,7 +32,7 @@ const cardItems = [
 </script>
 
 <template>
-  <section class="mt-[130px] lg:mt-[368px] containerr w-full xl:px-10">
+  <section class="mt-[130px] lg:mt-[368px] container-layout w-full xl:px-10">
     <div
       class="w-full lg:pb-0 pb-6 pt-[110px] max-w-[1653px] h-fit xl:max-h-[738px] xl:rounded-2xl px-4 bg-primary relative overflow-hidden"
     >
