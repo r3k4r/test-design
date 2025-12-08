@@ -173,7 +173,7 @@ onUnmounted(() => {
               />
             </div>
             <h4
-              :class="`font-semibold transition-colors duration-300 ${activeIndex === index ? 'text-black' : 'text-white'}`"
+              :class="`font-semibold transition-colors duration-300 ${activeIndex === index ? 'text-muted' : 'text-white'}`"
             >
               {{ item.title }}
             </h4>

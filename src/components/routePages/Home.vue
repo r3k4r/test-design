@@ -16,7 +16,9 @@ import Footer from '../layout/Footer.vue'
   <ImageSection />
   <GridCards />
   <HolidaySection />
-  <WhyChooseUs />
+  <div class="w-full flex items-center justify-center bg-primary/5">
+    <WhyChooseUs />
+  </div>
   <CircleSection />
   <BlackCard />
   <Opportunity />

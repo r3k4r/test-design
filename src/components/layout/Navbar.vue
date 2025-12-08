@@ -6,7 +6,6 @@ import Button from '../ui/Button.vue'
 import { Menu } from 'lucide-vue-next'
 
 const route = useRoute()
-const path = route.path
 const isMenuOpen = ref(false)
 const links = [
   { name: 'Home', path: '/' },
@@ -15,7 +14,7 @@ const links = [
   { name: 'Contact us', path: '/contact' },
 ]
 const isActive = computed(() => {
-  return (linkPath: string) => linkPath === path
+  return (linkPath: string) => linkPath === route.path
 })
 
 const menuHandler = () => {
@@ -25,7 +24,7 @@ const menuHandler = () => {
 
 <template>
   <div class="flex justify-between items-center containerr padding mt-[46px] h-16">
-    <div class="z-40">
+    <div class="z-60">
       <router-link to="/" class="cursor-pointer">
         <img :src="logo" alt="logo" class="lg:h-16 h-12" />
       </router-link>
@@ -36,7 +35,7 @@ const menuHandler = () => {
         v-for="link in links"
         :key="link.name"
         :to="link.path"
-        :class="`font-semibold ${isActive(link.path) ? 'text-primary' : 'text-primary-foreground'}`"
+        :class="`font-semibold ${isActive(link.path) ? 'text-primary' : 'text-muted'}`"
       >
         {{ link.name }}
       </router-link>
@@ -45,12 +44,12 @@ const menuHandler = () => {
     <div class="flex gap-4 items-center">
       <Button variant="secondary" class="hidden lg:block">Register</Button>
       <Button>Login</Button>
-      <Menu class="lg:hidden cursor-pointer z-20" @click="menuHandler" />
+      <Menu class="lg:hidden cursor-pointer z-60" @click="menuHandler" />
     </div>
 
     <div
       v-show="isMenuOpen"
-      class="fixed inset-0 bg-white z-10 flex flex-col items-center justify-center padding"
+      class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center padding"
     >
       <nav class="w-full text-center flex items-center flex-col justify-center pb-24 gap-y-12">
         <router-link

@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: 'manrope';
-  src: url('./src/assets/Manrope-Regular.ttf') format('truetype');
+  src: url('./src/assets/Manrope-Light.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 * {
-  font-family: 'manrope', sans-serif;
+  font-family: 'manrope';
 }
 
 @theme inline {

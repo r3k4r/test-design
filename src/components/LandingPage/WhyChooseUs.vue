@@ -11,7 +11,7 @@ const cardItems = [
 
 <template>
   <section
-    class="mt-[124px] lg:mt-[286px] max-w-[1102px] w-full padding flex flex-col items-center justify-between gap-16 lg:gap-[101px]"
+    class="mt-[124px] lg:mt-[286px] max-w-[1102px] w-full padding flex flex-col items-center justify-between gap-16 lg:gap-[101px] relative"
   >
     <!-- TEXT -->
     <div class="max-w-[680px] flex flex-col items-center justify-center gap-6">
@@ -42,11 +42,25 @@ const cardItems = [
         <!-- TEXT -->
         <div class="flex flex-col items-start md:items-center justify-center gap-2 h-full">
           <h5 class="md:text-center text-left leading-[150%] font-bold">{{ item.title }}</h5>
-          <p class="md:text-center text-left text-black/60 font-semibold">
+          <p class="md:text-center text-left text-muted/60 font-semibold">
             {{ item.desc }}
           </p>
         </div>
       </div>
     </div>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1920"
+      height="152"
+      viewBox="0 0 1920 152"
+      fill="none"
+      class="rotate-180 translate-y-[150px]"
+    >
+      <path
+        d="M960 0.0291206C588.018 2.39395 0 152 0 152H1920C1920 152 1347.22 -2.43259 960 0.0291206Z"
+        fill="#FFFCF3"
+      />
+    </svg>
   </section>
 </template>

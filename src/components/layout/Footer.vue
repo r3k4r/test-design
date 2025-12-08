@@ -26,19 +26,19 @@ const year = new Date().getFullYear()
           <div class="flex items-center gap-2">
             <a
               href="#"
-              class="text-black hover:text-[#0A66C2] duration-300 size-[41px] flex items-center justify-center"
+              class="text-muted hover:text-[#0A66C2] duration-300 size-[41px] flex items-center justify-center"
             >
               <Linkedin :size="24" />
             </a>
             <a
               href="#"
-              class="text-black hover:text-[#1877F2] duration-300 size-[41px] flex items-center justify-center"
+              class="text-muted hover:text-[#1877F2] duration-300 size-[41px] flex items-center justify-center"
             >
               <Facebook :size="24" />
             </a>
             <a
               href="#"
-              class="text-black hover:text-[#E1306C] duration-300 size-[41px] flex items-center justify-center"
+              class="text-muted hover:text-[#E1306C] duration-300 size-[41px] flex items-center justify-center"
             >
               <Instagram :size="24" />
             </a>
@@ -51,14 +51,14 @@ const year = new Date().getFullYear()
             <!-- Left Section - Contact Info -->
             <div class="w-full flex flex-col gap-4">
               <a href="mailto:info@babylonholiday.com" class="flex items-center gap-3 w-fit">
-                <Mail :size="20" class="text-black shrink-0" />
-                <span class="text-sm font-semibold underline text-black"
+                <Mail :size="20" class="text-muted shrink-0" />
+                <span class="text-sm font-semibold underline text-muted"
                   >info@babylonholiday.com</span
                 >
               </a>
               <a href="tel:++9647735566009" class="flex items-center gap-3 w-fit">
-                <Phone :size="20" class="text-black shrink-0" />
-                <span class="text-sm font-semibold underline text-black">+964 773 556 6009</span>
+                <Phone :size="20" class="text-muted shrink-0" />
+                <span class="text-sm font-semibold underline text-muted">+964 773 556 6009</span>
               </a>
             </div>
 
@@ -68,7 +68,7 @@ const year = new Date().getFullYear()
             >
               <!-- Menu -->
               <div class="flex flex-col gap-4">
-                <h3 class="text-base sm:text-lg font-semibold text-black">Menu</h3>
+                <h3 class="text-base sm:text-lg font-semibold text-muted">Menu</h3>
                 <ul class="flex flex-col gap-3">
                   <li>
                     <router-link to="/about" class="text-sm font-semibold text-[#757575]"
@@ -90,7 +90,7 @@ const year = new Date().getFullYear()
 
               <!-- Visit Us -->
               <div class="flex flex-col gap-4">
-                <h3 class="text-base sm:text-lg font-semibold text-black">Visit Us</h3>
+                <h3 class="text-base sm:text-lg font-semibold text-muted">Visit Us</h3>
                 <ul class="flex flex-col gap-3">
                   <li>
                     <router-link
@@ -126,7 +126,7 @@ const year = new Date().getFullYear()
           <!-- Newsletter -->
           <div class="flex flex-col gap-8 sm:col-span-2 lg:col-span-1">
             <div class="flex flex-col gap-4">
-              <h3 class="text-base sm:text-lg font-semibold text-black">Newsletter</h3>
+              <h3 class="text-base sm:text-lg font-semibold text-muted">Newsletter</h3>
               <p class="text-sm font-semibold text-[#757575] max-w-[352px]">
                 Subscribe with our newsletter to receive latest updates
               </p>
