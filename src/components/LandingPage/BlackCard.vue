@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Motion } from 'motion-v'
-import right from '@/assets/frame.svg'
+import right from '@/assets/shapes/frame.svg'
 import { BadgeDollarSign, Calendar, Calendar1, Languages, Link, Settings } from 'lucide-vue-next'
 
 const navItems = [

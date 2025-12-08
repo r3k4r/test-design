@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import left from '@/assets/left-frame.svg'
-import right from '@/assets/right-frame.svg'
-import image1 from '@/assets/image-1.png'
-import image2 from '@/assets/image-2.png'
-import image3 from '@/assets/image-3.png'
-import image4 from '@/assets/image-4.png'
+import left from '@/assets/shapes/left-frame.svg'
+import right from '@/assets/shapes/right-frame.svg'
+import image1 from '@/assets/cardImage/image-1.png'
+import image2 from '@/assets/cardImage/image-2.png'
+import image3 from '@/assets/cardImage/image-3.png'
+import image4 from '@/assets/cardImage/image-4.png'
 import { motion } from 'motion-v'
 
 const cardItems = [

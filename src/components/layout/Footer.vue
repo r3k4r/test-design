@@ -137,7 +137,7 @@ const year = new Date().getFullYear()
                 placeholder="Enter your email"
                 class="flex-1 px-5 py-2.5 text-sm sm:text-base border border-[#D9D9D9] rounded-lg focus:outline-none"
               />
-              <Button class="border border-black"> Subscribe </Button>
+              <Button class="font-extralight text-muted text-sm"> Subscribe </Button>
             </div>
           </div>
         </div>
