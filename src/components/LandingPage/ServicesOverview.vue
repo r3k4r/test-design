@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import left from '@/assets/shapes/left-frame.svg'
-import right from '@/assets/shapes/right-frame.svg'
-import image1 from '@/assets/cardImage/image-1.png'
-import image2 from '@/assets/cardImage/image-2.png'
-import image3 from '@/assets/cardImage/image-3.png'
-import image4 from '@/assets/cardImage/image-4.png'
+import left from '/shapes/left-frame.svg'
+import right from '/shapes/right-frame.svg'
+import image1 from '/cardImage/image-1.png'
+import image2 from '/cardImage/image-2.png'
+import image3 from '/cardImage/image-3.png'
+import image4 from '/cardImage/image-4.png'
 import { motion } from 'motion-v'
 
 const cardItems = [
@@ -32,7 +32,7 @@ const cardItems = [
 </script>
 
 <template>
-  <section class="mt-[130px] lg:mt-[368px] container-layout w-full xl:px-10">
+  <section class="mt-[130px] lg:mt-[368px] container-layout-lg w-full xl:px-10">
     <div
       class="w-full lg:pb-0 pb-6 pt-[110px] max-w-[1653px] h-fit xl:max-h-[738px] xl:rounded-2xl px-4 bg-primary relative overflow-hidden"
     >

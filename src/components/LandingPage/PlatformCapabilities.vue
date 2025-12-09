@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Motion } from 'motion-v'
-import right from '@/assets/shapes/frame.svg'
 import { BadgeDollarSign, Calendar, Calendar1, Languages, Link, Settings } from 'lucide-vue-next'
 
 const navItems = [
@@ -128,7 +127,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="mt-[125px] lg:mt-[237px] container-layout w-full xl:px-10">
+  <section class="mt-[125px] lg:mt-[237px] container-layout-lg w-full xl:px-10">
     <div
       class="flex flex-col items-start justify-start gap-14 lg:gap-12 w-full max-w-[1664px] h-fit xl:max-h-[932px] xl:rounded-2xl p-6 lg:p-16 bg-[#1E1E1E] text-white relative overflow-hidden"
     >
@@ -226,7 +225,7 @@ onUnmounted(() => {
       </div>
 
       <div class="absolute z-10 hidden md:block -top-20 -right-[150px]">
-        <img :src="right" alt="Right Frame" />
+        <img src="/shapes/frame.svg" alt="Right Frame" />
       </div>
     </div>
   </section>

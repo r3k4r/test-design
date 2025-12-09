@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import logo from '@/assets/logo.svg'
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import Button from '../ui/Button.vue'
 import { Menu } from 'lucide-vue-next'
+import Logo from '../brand/Logo.vue'
 
 const route = useRoute()
 const isMenuOpen = ref(false)
@@ -23,11 +23,9 @@ const menuHandler = () => {
 </script>
 
 <template>
-  <div class="flex justify-between items-center container-layout padding-layout mt-[46px] h-16">
+  <div class="flex justify-between items-center container-layout-lg padding-layout mt-[46px] h-16">
     <div class="z-60">
-      <router-link to="/" class="cursor-pointer">
-        <img :src="logo" alt="logo" class="lg:h-16 h-12" />
-      </router-link>
+      <Logo />
     </div>
 
     <nav class="hidden lg:flex gap-12 items-center">

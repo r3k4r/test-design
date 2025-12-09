@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Gateway from '../LandingPage/Gateway.vue'
+import GlobalCommunityCTA from '@/components/LandingPage/GlobalCommunityCTA.vue'
 import Footer from './Footer.vue'
 import Navbar from './Navbar.vue'
 </script>
@@ -8,7 +8,7 @@ import Navbar from './Navbar.vue'
   <div class="flex flex-col items-center justify-center overflow-hidden">
     <Navbar />
     <slot />
-    <Gateway />
+    <GlobalCommunityCTA />
     <Footer />
   </div>
 </template>

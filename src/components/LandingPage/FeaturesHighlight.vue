@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { BellRing, BriefcaseBusiness, Radio, Shield } from 'lucide-vue-next'
-import background from '@/assets/shapes/big-background.svg'
+import background from '/shapes/big-background.svg'
 
 const cardItems = [
   {
@@ -23,12 +23,12 @@ const cardItems = [
 </script>
 
 <template>
-  <section class="mt-[121px] max-w-[1102px] w-full padding-layout relative">
+  <section class="mt-[121px] container-layout-md w-full padding-layout relative">
     <div class="grid grid-cols-2 gap-6 md:gap-8">
       <div
         v-for="(item, index) in cardItems"
         :key="index"
-        class="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 bg-transparent border border-black/10 rounded-lg md:items-center"
+        class="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 bg-transparent border border-black/10 rounded-lg md:items-center z-50"
       >
         <div
           class="h-12 w-12 aspect-square bg-black text-white rounded-md grid place-content-center"
@@ -42,7 +42,7 @@ const cardItems = [
     <img
       :src="background"
       alt="background"
-      class="absolute lg:-translate-x-[1000px] -translate-x-[200px] -translate-y-[600px] lg:-translate-y-[800px] min-w-[1200px] lg:min-w-[2800px] max-h-[1500px] lg:max-h-[1893px]"
+      class="absolute z-20 lg:-translate-x-[1000px] -translate-x-[200px] -translate-y-[600px] lg:-translate-y-[800px] min-w-[1200px] lg:min-w-[2800px] max-h-[1500px] lg:max-h-[1893px]"
     />
   </section>
 </template>

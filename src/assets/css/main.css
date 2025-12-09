@@ -30,7 +30,7 @@
   --muted-foreground: #ffffff;
 }
 
-.container-layout {
+.container-layout-lg {
   @apply w-full max-w-416 mx-auto;
 }
 

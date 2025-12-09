@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Mail, Phone, Linkedin, Facebook, Instagram } from 'lucide-vue-next'
-import logo from '@/assets/logo.svg'
 import Button from '../ui/Button.vue'
+import Logo from '../brand/Logo.vue'
 
 const year = new Date().getFullYear()
 </script>
@@ -18,9 +18,7 @@ const year = new Date().getFullYear()
           class="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
         >
           <!-- Logo -->
-          <router-link to="/" class="shrink-0 w-[153px] h-[53px]">
-            <img :src="logo" alt="Babylon Holiday Logo" class="h-12 sm:h-14 md:h-16 w-auto" />
-          </router-link>
+          <Logo class="w-[153px] h-[53px]" />
 
           <!-- Social Icons -->
           <div class="flex items-center gap-2">
