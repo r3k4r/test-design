@@ -23,15 +23,15 @@ const cardItems = [
 </script>
 
 <template>
-  <section class="mt-[121px] container-layout-md w-full padding-layout relative">
-    <div class="grid grid-cols-2 gap-6 md:gap-8">
+  <section class="mt-28 container-layout-md w-full padding-layout relative">
+    <div class="grid grid-cols-2 gap-6 md:gap-6 md:gap-y-8">
       <div
         v-for="(item, index) in cardItems"
         :key="index"
         class="p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-6 bg-transparent border border-black/10 rounded-lg md:items-center z-50"
       >
         <div
-          class="h-12 w-12 aspect-square bg-black text-white rounded-md grid place-content-center"
+          class="h-12 w-12 aspect-square bg-muted text-white rounded-lg grid place-content-center"
         >
           <component :is="item.icon" />
         </div>
