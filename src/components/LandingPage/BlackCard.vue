@@ -156,7 +156,7 @@ onUnmounted(() => {
             :key="item.title"
             :ref="(el) => setNavRef(el, index)"
             @click="setActiveItem(index)"
-            class="group cursor-pointer flex items-center justify-center gap-2 p-1.5 rounded-full relative z-10 hover:opacity-80 transition-opacity"
+            class="group cursor-pointer flex items-center justify-center gap-2 px-2 py-1.5 rounded-full relative z-10 hover:opacity-80 transition-opacity"
           >
             <div class="relative w-[34px] h-[34px]">
               <Motion

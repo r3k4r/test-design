@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import Button from '../ui/Button.vue'
+import { Icon } from '@iconify/vue'
 </script>
 
 <template>
   <section class="flex flex-col items-center justify-center gap-6 mt-[118px] padding-layout">
     <div class="flex items-center gap-1 border border-black/15 rounded-full p-1 px-2">
+      <Icon class="text-primary" icon="si:unlock-fill" width="24" height="24" />
       <p class="text-muted/80 font-semibold">Gain access to 2.5M Hotel Partners</p>
     </div>
 

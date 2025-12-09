@@ -41,8 +41,8 @@ const cardItems = [
         </div>
         <!-- TEXT -->
         <div class="flex flex-col items-start md:items-center justify-center gap-2 h-full">
-          <h5 class="md:text-center text-left leading-[150%] font-bold">{{ item.title }}</h5>
-          <p class="md:text-center text-left text-muted/60 font-semibold">
+          <h5 class="md:text-center text-start leading-[150%] font-bold">{{ item.title }}</h5>
+          <p class="md:text-center text-start text-muted/60 font-semibold">
             {{ item.desc }}
           </p>
         </div>

@@ -25,7 +25,7 @@ const items = [
   <section class="mt-[124px] lg:mt-52 max-w-[1102px] w-full padding-layout">
     <!-- TEXT -->
     <div class="w-full flex flex-col items-start justify-start gap-12">
-      <h1 class="text-left max-w-[535px] text-[40px] font-semibold leading-[134%]">
+      <h1 class="text-start max-w-[535px] text-[40px] font-semibold leading-[134%]">
         Infinite Opportunities. One Platform.
       </h1>
 
