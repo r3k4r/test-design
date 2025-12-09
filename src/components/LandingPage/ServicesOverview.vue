@@ -32,7 +32,7 @@ const cardItems = [
 </script>
 
 <template>
-  <section class="mt-[130px] lg:mt-[368px] container-layout-lg w-full xl:px-10">
+  <section class="mt-[130px] lg:mt-[368px] container-layout-lg w-full xl:px-10 z-50">
     <div
       class="w-full lg:pb-0 pb-6 pt-[110px] max-w-[1653px] h-fit xl:max-h-[738px] xl:rounded-2xl px-4 bg-primary relative overflow-hidden"
     >
@@ -53,13 +53,10 @@ const cardItems = [
         <div
           class="mt-auto max-w-344 pt-14 lg:pt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-end justify-center gap-6"
         >
-          <motion.div
-            :initial="{ y: 0, borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }"
-            :whileHover="{ y: -16, borderBottomLeftRadius: 8, borderBottomRightRadius: 8 }"
-            :transition="{ duration: 0.5, ease: 'easeInOut' }"
+          <div
             v-for="(item, index) in cardItems"
             :key="index"
-            class="bg-white rounded-lg lg:rounded-b-none h-full p-6 pb-0 lg:pr-0 group flex flex-col gap-4"
+            class="bg-white rounded-lg lg:rounded-b-none h-full p-6 pb-0 lg:pr-0 group flex flex-col gap-4 duration-500 hover:-translate-y-4 hover:rounded-b-lg"
           >
             <!-- TITLE -->
             <div class="pr-6">
@@ -70,7 +67,7 @@ const cardItems = [
             <div class="p-4 lg:pr-0 pb-0 pt-4 rounded-lg rounded-b-none bg-[#f3f3f3]">
               <img :src="item.image" alt="" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
       <!-- LEFT & RIGHT FRAME -->
