@@ -7,21 +7,11 @@ import Button from '../ui/Button.vue'
     class="mt-[125px] md:mt-[343px] container-layout-md w-full padding-layout relative h-full min-h-[946px] flex items-center justify-center overflow-hidden"
   >
     <div
-      class="w-[250px] border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
+      v-for="size in [175, 350, 525, 700, 875]"
+      :key="size"
+      class="border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
+      :style="{ width: size + 'px' }"
     />
-    <div
-      class="w-[100px] border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
-    />
-    <div
-      class="w-[375px] border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
-    />
-    <div
-      class="w-[550px] border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
-    />
-    <div
-      class="w-[725px] border border-gray-400/20 bg-transparent aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"
-    />
-
     <div
       class="w-[350px] aspect-square rounded-full absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] bg-primary/5 blur-[30px]"
     />
@@ -61,11 +51,11 @@ import Button from '../ui/Button.vue'
       </div>
       <div class="flex flex-col items-center justify-center gap-12">
         <h1
-          class="text-[40px] sm:text-5xl md:text-[54px] font-semibold max-w-[600px] text-center leading-[112%]"
+          class="xl:text-7xl lg:text-5xl sm:text-4xl text-3xl font-semibold text-muted max-w-3xl text-center leading-[112%] statistics-title"
         >
           Elevate your business to new levels
         </h1>
-        <Button class="rounded-full! px-8">Learn more</Button>
+        <Button class="rounded-full! w-full px-6 h-12 max-w-40">Learn more</Button>
       </div>
       <div class="flex items-center justify-between gap-5 flex-wrap sm:flex-nowrap w-full mt-12">
         <div
