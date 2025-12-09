@@ -1,32 +1,24 @@
 <script setup lang="ts">
-import left from '/shapes/left-frame.svg'
-import right from '/shapes/right-frame.svg'
-import image1 from '/cardImage/image-1.png'
-import image2 from '/cardImage/image-2.png'
-import image3 from '/cardImage/image-3.png'
-import image4 from '/cardImage/image-4.png'
-import { motion } from 'motion-v'
-
 const cardItems = [
   {
     title: 'Hotels',
     desc: 'Easily browse and book from a global inventory of hotels with real-time availability and competitive rates. We connect you to trusted suppliers, making hotel bookings faster and more reliable.',
-    image: image1,
+    image: '/cardImage/image-1.png',
   },
   {
     title: 'Packages',
     desc: 'Create and sell customized travel packages effortlessly. Combine flights, hotels, transfers, and activities into one seamless offer tailored to your client’s needs — all in just a few clicks.',
-    image: image2,
+    image: '/cardImage/image-2.png',
   },
   {
     title: 'Activities',
     desc: 'Discover and book unforgettable experiences around the world. From city tours to adventure excursions, offer your customers a wide variety of activities to enhance their travel plans.',
-    image: image3,
+    image: '/cardImage/image-3.png',
   },
   {
     title: 'Transfer',
     desc: 'Simplify ground transportation with a wide range of reliable transfer services, from airport pickups to city-to-city rides. We offer private and shared transfers services through trusted partners.',
-    image: image4,
+    image: '/cardImage/image-4.png',
   },
 ]
 </script>
@@ -72,10 +64,10 @@ const cardItems = [
       </div>
       <!-- LEFT & RIGHT FRAME -->
       <div class="absolute z-10 hidden md:block -top-48 left-4">
-        <img :src="left" alt="Left Frame" />
+        <img src="/shapes/left-frame.svg" alt="Left Frame" />
       </div>
       <div class="absolute z-10 hidden md:block -top-32 right-4">
-        <img :src="right" alt="Right Frame" />
+        <img src="/shapes/right-frame.svg" alt="Right Frame" />
       </div>
     </div>
   </section>

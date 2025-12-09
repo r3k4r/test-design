@@ -6,7 +6,7 @@ import ServicesOverview from '@/components/LandingPage/ServicesOverview.vue'
 import WhyChooseUs from '@/components/LandingPage/WhyChooseUs.vue'
 import PlatformCapabilities from '@/components/LandingPage/PlatformCapabilities.vue'
 import InfiniteOpportunities from '@/components/LandingPage/InfiniteOpportunities.vue'
-import BusinessGrowthCTA from '@/components/LandingPage/BusinessGrowthCTA.vue'
+import BusinessGrowthCTA from '@/components/LandingPage/businessGrowth/BusinessGrowthCTA.vue'
 </script>
 
 <template>

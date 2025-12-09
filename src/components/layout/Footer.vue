@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Mail, Phone, Linkedin, Facebook, Instagram } from 'lucide-vue-next'
 import Button from '../ui/Button.vue'
 import Logo from '../brand/Logo.vue'
+import { Icon } from '@iconify/vue'
 
 const year = new Date().getFullYear()
 </script>
@@ -26,19 +26,19 @@ const year = new Date().getFullYear()
               href="#"
               class="text-muted hover:text-[#0A66C2] duration-300 size-[41px] flex items-center justify-center"
             >
-              <Linkedin :size="24" />
+              <Icon icon="fa6-brands:linkedin-in" width="20" height="20" />
             </a>
             <a
               href="#"
               class="text-muted hover:text-[#1877F2] duration-300 size-[41px] flex items-center justify-center"
             >
-              <Facebook :size="24" />
+              <Icon icon="fa6-brands:facebook-f" width="20" height="20" />
             </a>
             <a
               href="#"
               class="text-muted hover:text-[#E1306C] duration-300 size-[41px] flex items-center justify-center"
             >
-              <Instagram :size="24" />
+              <Icon icon="fa6-brands:instagram" width="20" height="20" />
             </a>
           </div>
         </div>
@@ -49,13 +49,13 @@ const year = new Date().getFullYear()
             <!-- Left Section - Contact Info -->
             <div class="w-full flex flex-col gap-4">
               <a href="mailto:info@babylonholiday.com" class="flex items-center gap-3 w-fit">
-                <Mail :size="20" class="text-muted shrink-0" />
+                <Icon icon="fluent:mail-28-filled" width="24" height="24" />
                 <span class="text-sm font-semibold underline text-muted"
                   >info@babylonholiday.com</span
                 >
               </a>
               <a href="tel:++9647735566009" class="flex items-center gap-3 w-fit">
-                <Phone :size="20" class="text-muted shrink-0" />
+                <Icon icon="fluent:call-20-filled" width="24" height="24" />
                 <span class="text-sm font-semibold underline text-muted">+964 773 556 6009</span>
               </a>
             </div>
@@ -68,19 +68,11 @@ const year = new Date().getFullYear()
               <div class="flex flex-col gap-4">
                 <h3 class="text-base sm:text-lg font-semibold text-muted">Menu</h3>
                 <ul class="flex flex-col gap-3">
-                  <li>
-                    <router-link to="/about" class="text-sm font-semibold text-[#757575]"
-                      >About Us</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/contact" class="text-sm font-semibold text-[#757575]"
-                      >Contact Us</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/faqs" class="text-sm font-semibold text-[#757575]"
-                      >FAQs</router-link
+                  <li v-for="route in ['About Us', 'Contact Us', 'FAQs']" :key="route">
+                    <router-link
+                      :to="`/${route.toLowerCase().replace(/ /g, '-')}`"
+                      class="text-sm font-semibold text-[#757575]"
+                      >{{ route }}</router-link
                     >
                   </li>
                 </ul>
@@ -90,30 +82,11 @@ const year = new Date().getFullYear()
               <div class="flex flex-col gap-4">
                 <h3 class="text-base sm:text-lg font-semibold text-muted">Visit Us</h3>
                 <ul class="flex flex-col gap-3">
-                  <li>
+                  <li v-for="country in ['Iraq', 'Germany', 'UAE', 'Turkey']" :key="country">
                     <router-link
-                      to="/iraq?country=iraq"
+                      :to="`/${country.toLowerCase()}?country=${country.toLowerCase()}`"
                       class="text-sm font-semibold text-[#757575]"
-                      >Iraq</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link
-                      to="/germany?country=germany"
-                      class="text-sm font-semibold text-[#757575]"
-                      >Germany</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link to="/uae?country=uae" class="text-sm font-semibold text-[#757575]"
-                      >UAE</router-link
-                    >
-                  </li>
-                  <li>
-                    <router-link
-                      to="/turkey?country=turkey"
-                      class="text-sm font-semibold text-[#757575]"
-                      >Turkey</router-link
+                      >{{ country }}</router-link
                     >
                   </li>
                 </ul>

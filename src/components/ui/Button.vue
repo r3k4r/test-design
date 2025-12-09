@@ -12,10 +12,6 @@ const props = withDefaults(defineProps<Props>(), {
   class: '',
 })
 
-const slots = useSlots()
-//you can ad icons, icon position, aspect ratio...
-// const emit = defineEmits(['click'])
-
 const buttonClasses = computed(() => {
   const baseClasses = 'justify-center items-center h-12 px-6 text-sm font-semibold rounded-lg'
 
