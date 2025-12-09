@@ -34,6 +34,10 @@
   @apply w-full max-w-416 mx-auto;
 }
 
+.container-layout-md {
+  @apply w-full max-w-275 mx-auto;
+}
+
 .padding-layout {
   @apply px-[26px] md:px-10;
 }
