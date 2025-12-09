@@ -3,7 +3,7 @@ import image from '/heroImage/heroImage.svg'
 </script>
 
 <template>
-  <section class="mt-[57px] padding-layout container-layout-md relative z-50">
+  <section class="mt-9 padding-layout container-layout-md relative z-50">
     <img :src="image" alt="image" />
     <div class="absolute -top-8 left-2 hidden lg:block">
       <svg
