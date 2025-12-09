@@ -1,36 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Motion } from 'motion-v'
 import { BadgeDollarSign, Calendar, Calendar1, Languages, Link, Settings } from 'lucide-vue-next'
 
-const navItems = [
-  {
-    icon: Calendar,
-    title: 'Booking Management',
-  },
-  {
-    icon: Calendar1,
-    title: 'Reservation Insights',
-  },
-  {
-    icon: BadgeDollarSign,
-    title: 'Financial Records',
-  },
-  {
-    icon: Link,
-    title: 'Agent & Staff Management',
-  },
-  {
-    icon: Languages,
-    title: 'Multi-Language Support',
-  },
-  {
-    icon: Settings,
-    title: 'Customizable Markups',
-  },
-]
-
-const itemContent = [
+const items = [
   {
     icon: Calendar,
     title: 'Booking Management',
@@ -77,6 +50,8 @@ const slidingBgStyle = ref({
   width: '0px',
   height: '0px',
 })
+
+const activeItem = computed(() => items[activeIndex.value]!)
 
 const setActiveItem = (index: number) => {
   activeIndex.value = index
@@ -137,9 +112,9 @@ onUnmounted(() => {
         </h1>
         <!-- HEADER (NAVBAR) -->
         <div
-          class="flex flex-col sm:flex-row flex-wrap items-start justify-start w-full sm:w-fit max-w-[1471px] gap-6 bg-[#303030] rounded-lg md:rounded-[28px] p-2 relative"
+          class="flex flex-col sm:flex-row flex-wrap items-start justify-start w-full sm:w-fit max-w-[1471px] gap-4 bg-[#303030] rounded-lg md:rounded-[28px] p-2 relative"
         >
-          <!-- Sliding white background - works on all screen sizes -->
+          <!-- Sliding white background -->
           <div
             class="absolute bg-white rounded-full transition-all duration-300 ease-in-out pointer-events-none"
             :style="{
@@ -150,12 +125,13 @@ onUnmounted(() => {
             }"
           />
 
+          <!-- items inside the bar -->
           <div
-            v-for="(item, index) in navItems"
+            v-for="(item, index) in items"
             :key="item.title"
             :ref="(el) => setNavRef(el, index)"
             @click="setActiveItem(index)"
-            class="group cursor-pointer flex items-center justify-center gap-2 px-2 py-1.5 rounded-full relative z-10 hover:opacity-80 transition-opacity"
+            class="group cursor-pointer flex items-center justify-center gap-2 px-1.5 py-1.5 rounded-full relative z-10 hover:opacity-80 transition-opacity"
           >
             <div class="relative w-[34px] h-[34px]">
               <Motion
@@ -168,7 +144,7 @@ onUnmounted(() => {
               />
               <component
                 :is="item.icon"
-                :class="`relative z-10 p-2 w-[34px] h-[34px] transition-colors ${activeIndex === index ? 'text-white' : 'text-white'}`"
+                :class="`relative z-10 p-2 w-[34px] h-[34px] transition-colors`"
               />
             </div>
             <h4
@@ -193,7 +169,7 @@ onUnmounted(() => {
               :animate="{ scale: 1, opacity: 1 }"
               :transition="{ duration: 0.3, ease: 'easeOut' }"
             >
-              <component :is="itemContent[activeIndex]?.icon" class="w-8 h-8 text-white" />
+              <component :is="activeItem.icon" class="w-8 h-8 text-white" />
             </Motion>
           </div>
           <!-- TITLE -->
@@ -205,7 +181,7 @@ onUnmounted(() => {
             :transition="{ duration: 0.4, ease: 'easeInOut' }"
           >
             <h1 class="text-[64px] leading-[112%] font-semibold">
-              {{ itemContent[activeIndex]?.title }}
+              {{ activeItem.title }}
             </h1>
           </Motion>
 
@@ -218,7 +194,7 @@ onUnmounted(() => {
             :transition="{ duration: 0.4, ease: 'easeInOut', delay: 0.1 }"
           >
             <p class="text-sm font-semibold text-white/60 max-w-[657px]">
-              {{ itemContent[activeIndex]?.description }}
+              {{ activeItem.description }}
             </p>
           </Motion>
         </div>
