@@ -24,7 +24,7 @@ const menuHandler = () => {
 
 <template>
   <div class="flex justify-between items-center container-layout-lg padding-layout mt-[46px] h-16">
-    <div class="z-60">
+    <div class="z-110">
       <Logo />
     </div>
 
@@ -42,12 +42,12 @@ const menuHandler = () => {
     <div class="flex gap-4 items-center">
       <Button variant="secondary" class="hidden lg:block">Register</Button>
       <Button>Login</Button>
-      <Menu class="lg:hidden cursor-pointer z-60" @click="menuHandler" :size="30" />
+      <Menu class="lg:hidden cursor-pointer z-110" @click="menuHandler" :size="30" />
     </div>
 
     <div
       v-show="isMenuOpen"
-      class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center padding-layout"
+      class="fixed inset-0 lg:hidden bg-white z-100 flex flex-col items-center justify-center padding-layout"
     >
       <nav class="w-full text-center flex items-center flex-col justify-center pb-24 gap-y-12">
         <router-link
