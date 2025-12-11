@@ -77,3 +77,6 @@
 .padding-layout {
   @apply px-[24px] md:px-10;
 }
+/* .padding-layout {
+  @apply pl-[24px] pr-[9px] md:px-10;
+} */
