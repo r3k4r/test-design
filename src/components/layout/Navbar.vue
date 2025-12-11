@@ -25,7 +25,7 @@ const menuHandler = () => {
 <template>
   <div class="flex justify-between items-center container-layout-lg padding-layout mt-[46px] h-16">
     <div class="z-60">
-      <Logo class="min-w-46 min-h-16" />
+      <Logo />
     </div>
 
     <nav class="hidden lg:flex gap-12 items-center">
@@ -42,7 +42,7 @@ const menuHandler = () => {
     <div class="flex gap-4 items-center">
       <Button variant="secondary" class="hidden lg:block">Register</Button>
       <Button>Login</Button>
-      <Menu class="lg:hidden cursor-pointer z-60" @click="menuHandler" />
+      <Menu class="lg:hidden cursor-pointer z-60" @click="menuHandler" :size="30" />
     </div>
 
     <div

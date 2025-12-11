@@ -55,7 +55,7 @@ const cardItems = [
       height="152"
       viewBox="0 0 1920 152"
       fill="none"
-      class="rotate-180 translate-y-[150px]"
+      class="rotate-180 translate-y-[140px]"
     >
       <path
         d="M960 0.0291206C588.018 2.39395 0 152 0 152H1920C1920 152 1347.22 -2.43259 960 0.0291206Z"

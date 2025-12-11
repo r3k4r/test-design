@@ -42,7 +42,7 @@ const cardItems = [
     <img
       :src="background"
       alt="background"
-      class="absolute z-20 lg:-translate-x-[1000px] -translate-x-[200px] -translate-y-[600px] lg:-translate-y-[800px] min-w-[1200px] lg:min-w-[2800px] max-h-[1500px] lg:max-h-[1893px]"
+      class="absolute z-20 lg:-translate-x-[1000px] -translate-x-[200px] -translate-y-[600px] lg:-translate-y-[800px] min-w-[1200px] lg:min-w-[2800px] max-h-[1500px] lg:max-h-[1705px]"
     />
   </section>
 </template>

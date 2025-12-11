@@ -18,10 +18,10 @@ const year = new Date().getFullYear()
           class="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
         >
           <!-- Logo -->
-          <Logo class="w-[153px] h-[53px]" />
+          <Logo class="h-14" />
 
           <!-- Social Icons -->
-          <div class="flex items-center gap-2">
+          <div class="flex items-start sm:items-center gap-2">
             <a
               href="#"
               class="text-muted hover:text-[#0A66C2] duration-300 size-[41px] flex items-center justify-center"
