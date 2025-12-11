@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { BellRing, BriefcaseBusiness, Radio, Shield } from 'lucide-vue-next'
-import background from '/shapes/big-background.svg'
+import background from '/shapes/yellow-background.svg'
 
 const cardItems = [
   {
