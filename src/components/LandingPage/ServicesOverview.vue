@@ -3,22 +3,22 @@ const cardItems = [
   {
     title: 'Hotels',
     desc: 'Easily browse and book from a global inventory of hotels with real-time availability and competitive rates. We connect you to trusted suppliers, making hotel bookings faster and more reliable.',
-    image: '/cardImage/image-1.png',
+    image: '/ServiceOverviewImages/image-1.png',
   },
   {
     title: 'Packages',
     desc: 'Create and sell customized travel packages effortlessly. Combine flights, hotels, transfers, and activities into one seamless offer tailored to your client’s needs — all in just a few clicks.',
-    image: '/cardImage/image-2.png',
+    image: '/ServiceOverviewImages/image-2.png',
   },
   {
     title: 'Activities',
     desc: 'Discover and book unforgettable experiences around the world. From city tours to adventure excursions, offer your customers a wide variety of activities to enhance their travel plans.',
-    image: '/cardImage/image-3.png',
+    image: '/ServiceOverviewImages/image-3.png',
   },
   {
     title: 'Transfer',
     desc: 'Simplify ground transportation with a wide range of reliable transfer services, from airport pickups to city-to-city rides. We offer private and shared transfers services through trusted partners.',
-    image: '/cardImage/image-4.png',
+    image: '/ServiceOverviewImages/image-4.png',
   },
 ]
 </script>
